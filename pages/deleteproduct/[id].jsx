@@ -15,7 +15,7 @@ const DeleteProduct = () => {
         if (id) {
             const deleteProduct = async () => {
                 try {
-                    await axios.delete(`https://carparts-ki7c.onrender.com/products/${id}`);
+                    await axios.delete(`https://carparts-ki7c.onrender.com/admin/products/${id}`);
                     setMessage('Wybrany Produkt usunięto pomyślnie.');
                 } catch (err) {
                     setError('Coś poszło nie tak.');

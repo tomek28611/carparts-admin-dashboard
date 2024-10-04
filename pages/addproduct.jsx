@@ -40,7 +40,7 @@ const AddProduct = () => {
         });
 
         try {
-            await axios.post('https://carparts-ki7c.onrender.com/products/add', formData, {
+            await axios.post('https://carparts-ki7c.onrender.com/products/admin/add', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

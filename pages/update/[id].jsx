@@ -22,7 +22,7 @@ const UpdateProduct = () => {
         if (id) {
             const fetchProduct = async () => {
                 try {
-                    const response = await axios.get(`https://carparts-ki7c.onrender.com/product/${id}`);
+                    const response = await axios.get(`https://carparts-ki7c.onrender.com/admin/products/${id}`);
                     setProductData(response.data);
                 } catch (err) {
                     setError('Error fetching product');
